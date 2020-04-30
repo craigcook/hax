@@ -67,7 +67,6 @@ $featured_id = get_cat_ID('Featured Article');
           <?php edit_post_link('Edit Post', '', ''); ?>
         </span>
       <?php endif; ?>
-      <div class="socialshare" data-type="bubbles"></div>
     </div>
   </div>
 </div>

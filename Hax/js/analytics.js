@@ -160,23 +160,9 @@ hacks.dntEnabled = function(dnt, ua) {
                 }
             });
         },
-
-        /*
-            Track all socialshare clicks
-        */
-        trackSocialShareClicks: function() {
-          $('.share').click(function(){
-            if ($(this).find('.socialshare').hasClass('open')) {
-              analytics.trackEvent(['socialshare', 'close']);
-            } else {
-              analytics.trackEvent(['socialshare', 'open']);
-            }
-          });
-        }
     };
 
     $(doc).ready(function(){
-      analytics.trackSocialShareClicks();
       analytics.trackOutboundLinks(doc.body);
     });
 

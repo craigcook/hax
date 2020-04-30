@@ -528,18 +528,8 @@ td, th {
   border-bottom: 1px solid #005CA5;
 }
 
-
-
 .post__meta {
   font-size: .8rem;
-}
-
-.socialshare {
-  margin-top: 1em;
-}
-
-.socialshare, .socialshare * {
-  box-sizing: content-box;
 }
 
 .article pre {
@@ -898,7 +888,8 @@ td, th {
   .post p,
   .post ul,
   .post ol,
-  .post dl {
+  .post dl,
+  .post pre {
     max-width: 65ch;
   }
 
@@ -975,11 +966,6 @@ td, th {
   a.fx-button:hover {
     background: #fff;
     color: #16da00;
-  }
-
-  .socialshare {
-    display: inline-block;
-    margin: 0 0 0 1em;
   }
 
 }

@@ -325,14 +325,6 @@ function mozhacks_load_scripts() {
     wp_enqueue_script('checkcomments');
   }
 
-  // Register and load the socialsharing script
-  if ( is_singular() && get_option('mozhacks_share_posts') && !is_page(array('home','about','demos','articles')) ) {
-    wp_register_script( 'socialshare', get_template_directory_uri() . '/js/socialshare.min.js', array('jquery', 'analytics'));
-    if ( is_singular() && get_option('mozhacks_share_posts') && !is_page(array('home','about','demos','articles')) ) {
-      wp_enqueue_script( 'socialshare' );
-    }
-  }
-
   // Register and load analytics script with jquery dependency
   wp_register_script( 'analytics', get_template_directory_uri() . '/js/analytics.js', array('jquery'));
   wp_enqueue_script( 'analytics', get_template_directory_uri() . '/js/analytics.js' );
